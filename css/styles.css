@@ -1,0 +1,245 @@
+
+/* Content area */
+
+* {
+    font-family: "Newsreader", Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #FAFAEE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+h1 {
+    font-size: 40px;
+    color: #19150F;
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+.bodytext {
+    font-size: 24px;
+    color: #3E301E;
+    font-style: italic;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+.form {
+    padding-top: 20px;
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+}
+
+/* Form related ones */
+.lorem-form {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-self:stretch;
+    justify-content: stretch;
+    width: 100%;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+input {
+    padding: 8px 12px;
+    max-height: 42px;
+    background-color: #F3F0D7;
+    border: 1px solid #d4cba7;
+    border-radius: 2px;
+    color: #3E301e;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+input:focus {
+    border-radius: 2px;
+    border: 2px solid #584b35;
+}
+
+
+.btn {
+  appearance: none;
+  background-color: #19150F;
+  border: 1px solid #19150F;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  list-style: none;
+  padding: 8px 8px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.btn:hover {
+  background-color: #302C27;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+
+.btn:active {
+  background-color: #3A3732;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+.btn:focus {
+  outline: 1px transparent;
+}
+
+.btn:before {
+  display: none;
+}
+
+
+
+/* Regular button style */
+#copyBtn {
+    position: sticky;
+    top: 0px;
+    left: 0px; /* Match the container's padding */
+    background-color: #EEEBD8;
+    color: #3E301E;
+    border: 1px solid #cccabc;
+    cursor: pointer;
+    z-index: 100;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+#copyBtn:hover {
+    background-color: #E2DFCD;
+}
+
+
+/* Content Area styling */
+.content {
+    display: none;
+    position: relative;
+    padding: 24px;
+    margin-top: 20px;
+    background-color: #EEEBD8;
+    border: 1px solid #DBD2B3;
+    border-radius: 4px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.content.show {
+    display: block;
+}
+
+p.result {
+    font-size: 16px;
+    line-height: 150%;
+    color: #3E301E;
+}
+
+
+/* hide add remove */
+input[type="number"] {
+    appearance: textfield;          /* Standard */
+    -webkit-appearance: textfield;  /* Safari, Chrome */
+    -moz-appearance: textfield;     /* Firefox */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    section {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        margin: 20px 20px;
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 24px;
+        color: #19150F;
+        margin: 0px;
+        padding-top: 20px;
+        padding-bottom: 4px;
+    }
+    
+    .bodytext {
+        font-size: 16px;
+        color: #3E301E;
+        font-style: italic;
+        margin: 0px;
+        padding-bottom: 20px;
+    }
+    
+    .form {
+        padding-top: 20px;
+        display: flex;
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Form related ones */
+    .lorem-form {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-self:stretch;
+        justify-content: stretch;
+        width: 100%;
+    }    
+    
+    /* Content Area styling */
+.content {
+    display: none;
+    position: relative;
+    padding: 24px;
+    margin-top: 20px;
+    background-color: #EEEBD8;
+    border: 1px solid #DBD2B3;
+    border-radius: 4px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+}
